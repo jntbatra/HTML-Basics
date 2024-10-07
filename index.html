@@ -5,19 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Basics</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <nav>
+            <a href="#introduction">Introduction</a>
+            <a href="#elements">HTML Elements</a>
+            <a href="#contact">Contact</a>
+        </nav>
         <h1>Welcome to HTML Basics</h1>
     </header>
 
     <main>
-        <section>
+        <section id="introduction">
             <h2>Introduction to HTML</h2>
             <p>HTML stands for Hypertext Markup Language. It is the standard language for creating web pages.</p>
         </section>
 
-        <section>
+        <section id="elements">
             <h2>HTML Elements</h2>
             <ul>
                 <li>Heading Elements (h1, h2, h3...)</li>
@@ -25,6 +53,11 @@
                 <li>Link Element (a)</li>
                 <li>Image Element (img)</li>
             </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out at <a href="mailto:info@example.com">info@example.com</a>.</p>
         </section>
     </main>
 

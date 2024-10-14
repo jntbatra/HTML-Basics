@@ -1,0 +1,111 @@
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#elements {
+    height: 240px;
+}
+
+#contact {
+    background: #eee9e9;
+    margin: 20px 0;
+}
+
+.contact-form {
+    padding: 50px;
+}
+
+.contact-form h2 {
+    margin: auto 10px;
+    text-align: center;
+    color: #0062cc;
+}
+
+.contact-form p {
+    text-align: center;
+    margin: 10px 10px 20px 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.col {
+    width: 300px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    display: block;
+    width: 96%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius:1rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btnContact {
+    height: 38px;
+    width: 160px;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+
+.wrapMessage {
+    min-height: 120px;
+    height: 120px;
+    width: 96%;
+    resize: vertical;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 840px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .btnContact {
+        width: 100%;
+        float: left;
+    }
+}

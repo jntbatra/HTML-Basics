@@ -9,67 +9,131 @@
     <style>
         /* Basic styling for the navigation bar */
         nav {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
             text-align: center;
         }
         nav a {
-            color: #fff;
-            margin: 0 15px;
+            color: #ecf0f1;
+            margin: 0 20px;
             text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #1abc9c;
         }
-        
+
+        /* General Section Styling */
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2980b9;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        h1:hover,h2:hover{
+            transform: scale(1.2);
+        }
+
+        p, li {
+            font-size: 1.1em;
+            color: #7f8c8d;
+        }
+
+        /* Styling for specific sections */
+        #elements ul {
+            list-style-type: square;
+            padding-left: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        /* Contact Section Styling */
+        #contact {
+            background: #f9f9f9;
+            padding: 50px 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #2980b9;
+        }
+
+        .contact-form p {
+            margin-bottom: 30px;
+            color: #7f8c8d;
+        }
+
+        /* Footer Styling */
         .footer {
-            background-color: #333;
-            color: #fff;
-            padding: 30px 0;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 40px 0;
             text-align: center;
         }
 
         .footer-content {
             display: flex;
             justify-content: space-around;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
-        .contact-info, .social-links {
+        .footer-content div {
             flex: 1;
         }
 
-        .contact-info h3, .social-links h3 {
-            font-size: 1.2em;
-        }
-
         .social-links ul {
-            list-style-type: none;
+            display: flex;
+            justify-content: center;
             padding: 0;
         }
 
         .social-links ul li {
-            margin-bottom: 10px;
+            margin: 0 15px;
         }
 
         .social-links ul li a {
-            color: #fff;
+            color: #ecf0f1;
             text-decoration: none;
+            font-size: 1.2em;
             transition: color 0.3s ease;
         }
 
         .social-links ul li a:hover {
-            color: #f0f0f0;
+            color: #1abc9c;
         }
 
         .copyright {
             margin-top: 20px;
+            font-size: 0.9em;
+            color: #bdc3c7;
         }
 
-        .copyright p {
-            font-size: 0.8em;
+        /* Responsiveness for smaller screens */
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .social-links ul {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -109,10 +173,10 @@
                             <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
                         </div>
                         <div class="form-group">
-                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                            <input type="email" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
                         </div>
                         <div class="form-group">
-                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                            <input type="tel" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
                         </div>
                     </div>
                     <div class="col">
@@ -151,3 +215,4 @@
     </footer>
 </body>
 </html>
+
